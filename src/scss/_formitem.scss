@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import "_config";
+.ucs-form-group{ position: relative; height: nth($global-input-form, 1); line-height: nth($global-input-form, 1); margin-bottom: nth($global-input-form, 2);
+  &:after{ @include clear(); }
+  .label{ float: left; display: block; width: 140px; text-align: right; margin-right: 5px; line-height: nth($global-input-form, 1); z-index: 11; }
+  .ucs-form-box{ float: left }
+  .unit{ float: left; margin-left: 5px; }
+  /*验证码输入框长度*/
+  .ucs-input-code{ width: 200px; }
+  //自动高时
+  &.ucs-auto-height{ height: auto; line-height: inherit }
+  //验证相关
+  .ucs-form-explain{ float: left; margin-left: 10px; color: nth($global-input-tips, 1);
+    i{ color: nth($global-input-tips, 1); vertical-align: middle; display: inline-block; margin-right: 5px; width: 15px; height: 15px; background: #f60; }
+    &.success{ color: nth($global-input-tips, 2);
+      i{ color: nth($global-input-tips, 2); background: green }
+    }
+  }
+  .other{ display: inline-block; }
+}

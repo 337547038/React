@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import "_config";
+.ucs-radio{
+  $borderClolor: #666; //边框颜色
+  $borderClolorChcked: #108ee9; //checked状态颜色
+  $borderClolorDisabled: #ccc; //disabled状态颜色
+  $height: 12px;
+  cursor: pointer; display: inline-block; position: relative; vertical-align: middle; overflow: hidden; height: 18px; line-height: 18px; margin-right: 10px;
+
+  .ucs-radio-inner{ cursor: pointer; border: 1px solid $borderClolor; width: $height; height: $height; border-radius: 50%; display: inline-block; vertical-align: middle; position: relative;
+    &:after{
+      content: ' '; display: none; background-color: $borderClolorChcked; border: 0; height: $height / 2; left: $height / 4; top: $height /4; width: $height / 2; border-radius: 50%; position: absolute; animation: radioafter .5s; -webkit-animation: radioafter .5s;
+    }
+  }
+  .text{ display: inline-block; vertical-align: middle; margin-left: 5px }
+  .ucs-radio-input{ display: none;
+    &:checked + .ucs-radio-inner{ border-color: $borderClolorChcked;
+      &:after{ display: inline-block; }
+    }
+    &:disabled + .ucs-radio-inner{ border-color: $borderClolorDisabled; cursor: not-allowed;
+      &:after{ background: $borderClolorDisabled }
+    }
+  }
+  &.lt8{
+    .ucs-radio-input{ display: inline-block; vertical-align: middle; }
+    .ucs-radio-inner{ display: none; }
+  }
+  @at-root{
+    @keyframes radioafter{
+      0%{ transform: scale(0); opacity: 0 }
+      100%{ transform: scale(1); opacity: 1 }
+    }
+    @-webkit-keyframes radioafter{
+      0%{ -webkit-transform: scale(0); opacity: 0 }
+      100%{ -webkit-transform: scale(1); opacity: 1 }
+    }
+  }
+}

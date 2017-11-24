@@ -1,0 +1,8 @@
+@charset "utf-8";
+@import "_config";
+.btn{ width: 160px; @include height(40px); text-align: center; border: 0; border-radius: 5px; cursor: pointer;
+  &.btn-confirm{ background: #006fbc; color: #fff }
+  &.btn-cancel{ background: #999; color: #fff }
+  &.btn-block{ width: 100%; display: block; }
+  &.btn-disabled{ background: #ddd; cursor: not-allowed; }
+}

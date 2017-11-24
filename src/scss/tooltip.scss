@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "_config";
+$backgroundColor: #000;
+$borderColor: #000;
+$arrowWidth: 10px;
+$border: $arrowWidth solid #000;
+$transparent: $arrowWidth solid transparent;
+.tooltip{ position: absolute; max-width: 600px; display: none; animation: tooltip-anim .5s; z-index: 1000;
+  .tooltip-arrow{ width: 0; height: 0; position: absolute; }
+  .tooltip-inner{ border: 1px solid $borderColor; padding: 5px 10px; color: #fff; border-radius: 3px; background: $backgroundColor; display: inline-block; }
+  &.hover{ display: block }
+  &.top{
+    .tooltip-arrow{
+      border-top: $border;
+      border-left: $transparent;
+      border-right: $transparent;
+      left: 50%;
+      margin-left: - $arrowWidth;
+      bottom: - $arrowWidth; }
+  }
+  &.right{
+    .tooltip-arrow{
+      border-right: $border;
+      border-top: $transparent;
+      border-bottom: $transparent;
+      left: - $arrowWidth;
+      top: 50%;
+      margin-top: - $arrowWidth; }
+  }
+  &.bottom{
+    .tooltip-arrow{ left: 50%; margin-left: - $arrowWidth; top: - $arrowWidth;
+      border-bottom: $border;
+      border-left: $transparent;
+      border-right: $transparent; }
+  }
+  &.left{
+    .tooltip-arrow{
+      border-left: $border;
+      border-top: $transparent;
+      border-bottom: $transparent;
+      right: - $arrowWidth;
+      top: 50%;
+      margin-top: - $arrowWidth;
+    }
+  }
+  &.top-right{
+    .tooltip-arrow{ left: 10px; bottom: - $arrowWidth;
+      border-top: $border; border-left: $transparent; border-right: $transparent; }
+  }
+  &.top-left{
+    .tooltip-arrow{ right: 10px; bottom: - $arrowWidth;
+      border-top: $border; border-left: $transparent; border-right: $transparent; }
+  }
+  &.bottom-right{
+    .tooltip-arrow{ left: 10px; top: - $arrowWidth;
+      border-bottom: $border; border-left: $transparent; border-right: $transparent; }
+  }
+  &.bottom-left{
+    .tooltip-arrow{ right: 10px; top: - $arrowWidth;
+      border-bottom: $border; border-left: $transparent; border-right: $transparent;
+    }
+  }
+  @at-root{
+    @keyframes tooltip-anim{
+      0%{ opacity: .6; transform: scale(.95) }
+      100%{ opacity: 1; transform: scale(1); }
+    }
+  }
+}

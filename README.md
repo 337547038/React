@@ -1,2 +1,59 @@
-# React
-åŸºäºŽReactçš„ç»„ä»¶ï¼ŒReactè¡¨å•éªŒè¯ã€Reactå¼¹å±‚åŠalertã€confirmå¼¹çª—ã€React Tooltipç»„ä»¶ï¼ŒReactå•é€‰Radioå¤šé€‰CheckboxåŠSelectç­‰formè¡¨å•å…ƒç´ ï¼ŒAjaxå¼‚æ­¥æ•°æ®è¯·æ±‚ç­‰ç»„ä»¶ï¼Œæ‰€æœ‰ç»„ä»¶ä»£ç å‡å…¼å®¹IE8
+# React UI×é¼þ¿â
+Ò»¸ö»ùÓÚReactµÄÇ°¶ËUI×é¼þ¿â£¬React±íµ¥ÑéÖ¤¡¢Reactµ¯²ã¼°alert¡¢confirmµ¯´°¡¢React Tooltip×é¼þ£¬Reactµ¥Ñ¡Radio¶àÑ¡Checkbox¼°SelectµÈform±íµ¥ÔªËØ£¬AjaxÒì²½Êý¾ÝÇëÇóµÈ×é¼þ£¬ËùÓÐ×é¼þ´úÂë¾ù¼æÈÝIE8;
+
+## ×é¼þËµÃ÷
+- Ajax 
+    ÓÃÓÚ½â¾öÇ°¶ËÓëºó¶ËµÄÍ¨ÐÅ£¬Êý¾ÝÇëÇó
+
+- Button 
+   ±íµ¥buttonÔªËØ
+
+- Checkbox
+  ±íµ¥CheckboxÔªËØ£¬°üÀ¨¶àÑ¡
+
+- Dialog
+  alert¡¢confirmµ¯´°×é¼þ
+
+- Form
+  ±íµ¥×é¼þ£¬±íµ¥ÑéÖ¤
+
+- Input
+  ±íµ¥inputÔªËØ
+
+- Layer
+  Reactµ¯´°×é¼þ
+
+- Radio
+  ±íµ¥RadioÔªËØ
+
+- SelectDropDown
+  div·ÂSelectÏÂÀ­£¬½â¾öÔÚ¸÷ÖÖä¯ÀÀÆ÷µÄÏÔÊ¾ÍâÃæÎÊÌâ
+
+- Textarea
+  ±íµ¥TextareaÔªËØ
+
+- Tooltip
+  TooltipÌáÊ¾×é¼þ£¬Ö§³Ö9¹¬¸ñ·½ÏòÌáÊ¾¼°ÌáÊ¾×Ô¶¯»»ÐÐ
+
+## ÏîÄ¿Ä¿Â¼½á¹¹ËµÃ÷
+- dist
+   UI×é¼þ¿âµÄ·¢²¼°æ±¾
+- src
+  UI×é¼þµÄ×é¼þÔ´Âë
+- src/examples
+  UI×é¼þµÄÊ¹ÓÃÊ¾Àý£¬°üÀ¨¿ÉÔËÐÐÊ¾Àý¼°Ê¾ÀýÔ´Âë£¬Ã¿Ò»¸ö×é¼þ¶¼ÓÐÒ»¸öÊ¾Àý¡£
+
+### ÒýÓÃ£º
+Èç¹ûÐèÒª¼æÈÝIE8£¬ÐèÒªÔÚÒ³ÃæÒýÓÃes5-shamºÍes5-shimÎÄ¼þ¡£
+
+```
+    <script type="text/javascript" src="../libs/es5-shim.min.js"></script>
+    <script type="text/javascript" src="../libs/es5-sham.min.js"></script>
+```
+
+## Ê¹ÓÃ
+   - $ npm run dev
+       ÔÚä¯ÀÀÆ÷ÊäÈëhttp://localhost:8080/
+
+  - $ npm run build 
+      ±àÒëÊ¾Àýµ½distÊä³öÄ¿Â¼

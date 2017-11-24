@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import "_config";
+//*需要用到input样式*/
+.select-dropdown {
+  $iconwidth: 8px; //下拉图标宽
+  display: inline-block;
+  position: relative;
+  margin-right:10px;
+  .icon {
+    right: 15px;
+    top: 50%;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    &:after {
+      border-top: $iconwidth solid #999;
+      border-left: $iconwidth solid transparent;
+      border-right: $iconwidth solid transparent;
+      width: 0;
+      height: 0;
+      display: block;
+      content: ' ';
+      position: absolute;
+      top: $iconwidth /2;
+    }
+  }
+  .input {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    margin-top: 6px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    width: 150px;
+    overflow: hidden;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out 0s;
+  }
+  .input.placeholder {
+    color: $global-placeholder
+  }
+  .dropdown {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    display: none;
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    li {
+      line-height: 30px;
+      padding-left: 10px;
+      &:hover {
+        background: #f8f8f8;
+      }
+      &.disabled {
+        font-style: italic;
+        cursor: not-allowed
+      }
+      &.active {
+        background: #36a1d3;
+        color: #fff
+      }
+    }
+    .dropdown-border {
+      border: 1px solid nth($global-input-event, 1);
+      overflow-x: hidden;
+      overflow-y: auto
+    }
+  }
+  &.open {
+    z-index: 10;
+    //这里引用输入框的焦点样式
+    .select-control .input {
+      border-color: nth($global-input-event, 1);
+      color: nth($global-input-event, 2);
+    }
+    .dropdown {
+      display: block;
+    }
+    .icon {
+      &:after {
+        border-bottom: $iconwidth solid #999;
+        border-top: $iconwidth solid transparent;
+        position: absolute;
+        top: - $iconwidth/2;
+      }
+    }
+  }
+  &.select-bank {
+    .input {
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .dropdown {
+      li {
+        @include height(40px);
+        overflow: hidden;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  &.select-search {
+    .search-box {
+      position: relative;
+      margin: 10px 0;
+      .btn-confirm {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
