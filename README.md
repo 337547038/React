@@ -1,0 +1,2 @@
+# React
+基于React的组件，React表单验证、React弹层及alert、confirm弹窗、React Tooltip组件，React单选Radio多选Checkbox及Select等form表单元素，Ajax异步数据请求等组件，所有组件代码均兼容IE8
