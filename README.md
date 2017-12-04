@@ -1,59 +1,62 @@
-# React UI×é¼þ¿â
-Ò»¸ö»ùÓÚReactµÄÇ°¶ËUI×é¼þ¿â£¬React±íµ¥ÑéÖ¤¡¢Reactµ¯²ã¼°alert¡¢confirmµ¯´°¡¢React Tooltip×é¼þ£¬Reactµ¥Ñ¡Radio¶àÑ¡Checkbox¼°SelectµÈform±íµ¥ÔªËØ£¬AjaxÒì²½Êý¾ÝÇëÇóµÈ×é¼þ£¬ËùÓÐ×é¼þ´úÂë¾ù¼æÈÝIE8;
+# React UIç»„ä»¶åº“
+ä¸€ä¸ªåŸºäºŽReactçš„å‰ç«¯UIç»„ä»¶åº“ï¼ŒReactè¡¨å•éªŒè¯ã€Reactå¼¹å±‚åŠalertã€confirmå¼¹çª—ã€React Tooltipç»„ä»¶ï¼ŒReactå•é€‰Radioå¤šé€‰CheckboxåŠSelectç­‰formè¡¨å•å…ƒç´ ï¼ŒAjaxå¼‚æ­¥æ•°æ®è¯·æ±‚ç­‰ç»„ä»¶ï¼Œæ‰€æœ‰ç»„ä»¶ä»£ç å‡å…¼å®¹IE8;
 
-## ×é¼þËµÃ÷
+## ç»„ä»¶è¯´æ˜Ž
 - Ajax 
-    ÓÃÓÚ½â¾öÇ°¶ËÓëºó¶ËµÄÍ¨ÐÅ£¬Êý¾ÝÇëÇó
+    ç”¨äºŽè§£å†³å‰ç«¯ä¸ŽåŽç«¯çš„é€šä¿¡ï¼Œæ•°æ®è¯·æ±‚
 
 - Button 
-   ±íµ¥buttonÔªËØ
+   è¡¨å•buttonå…ƒç´ 
 
 - Checkbox
-  ±íµ¥CheckboxÔªËØ£¬°üÀ¨¶àÑ¡
+  è¡¨å•Checkboxå…ƒç´ ï¼ŒåŒ…æ‹¬å¤šé€‰
 
 - Dialog
-  alert¡¢confirmµ¯´°×é¼þ
+  alertã€confirmå¼¹çª—ç»„ä»¶
 
 - Form
-  ±íµ¥×é¼þ£¬±íµ¥ÑéÖ¤
+  è¡¨å•ç»„ä»¶ï¼Œè¡¨å•éªŒè¯
 
 - Input
-  ±íµ¥inputÔªËØ
+  è¡¨å•inputå…ƒç´ 
 
 - Layer
-  Reactµ¯´°×é¼þ
+  Reactå¼¹çª—ç»„ä»¶
 
 - Radio
-  ±íµ¥RadioÔªËØ
+  è¡¨å•Radioå…ƒç´ 
 
 - SelectDropDown
-  div·ÂSelectÏÂÀ­£¬½â¾öÔÚ¸÷ÖÖä¯ÀÀÆ÷µÄÏÔÊ¾ÍâÃæÎÊÌâ
+  divä»¿Selectä¸‹æ‹‰ï¼Œè§£å†³åœ¨å„ç§æµè§ˆå™¨çš„æ˜¾ç¤ºå¤–é¢é—®é¢˜
 
 - Textarea
-  ±íµ¥TextareaÔªËØ
+  è¡¨å•Textareaå…ƒç´ 
 
 - Tooltip
-  TooltipÌáÊ¾×é¼þ£¬Ö§³Ö9¹¬¸ñ·½ÏòÌáÊ¾¼°ÌáÊ¾×Ô¶¯»»ÐÐ
+  Tooltipæç¤ºç»„ä»¶ï¼Œæ”¯æŒ9å®«æ ¼æ–¹å‘æç¤ºåŠæç¤ºè‡ªåŠ¨æ¢è¡Œ
 
-## ÏîÄ¿Ä¿Â¼½á¹¹ËµÃ÷
+## é¡¹ç›®ç›®å½•ç»“æž„è¯´æ˜Ž
 - dist
-   UI×é¼þ¿âµÄ·¢²¼°æ±¾
+   UIç»„ä»¶åº“çš„å‘å¸ƒç‰ˆæœ¬
 - src
-  UI×é¼þµÄ×é¼þÔ´Âë
+  UIç»„ä»¶çš„ç»„ä»¶æºç 
 - src/examples
-  UI×é¼þµÄÊ¹ÓÃÊ¾Àý£¬°üÀ¨¿ÉÔËÐÐÊ¾Àý¼°Ê¾ÀýÔ´Âë£¬Ã¿Ò»¸ö×é¼þ¶¼ÓÐÒ»¸öÊ¾Àý¡£
+  UIç»„ä»¶çš„ä½¿ç”¨ç¤ºä¾‹ï¼ŒåŒ…æ‹¬å¯è¿è¡Œç¤ºä¾‹åŠç¤ºä¾‹æºç ï¼Œæ¯ä¸€ä¸ªç»„ä»¶éƒ½æœ‰ä¸€ä¸ªç¤ºä¾‹ã€‚
 
-### ÒýÓÃ£º
-Èç¹ûÐèÒª¼æÈÝIE8£¬ÐèÒªÔÚÒ³ÃæÒýÓÃes5-shamºÍes5-shimÎÄ¼þ¡£
+### å¼•ç”¨ï¼š
+å¦‚æžœéœ€è¦å…¼å®¹IE8ï¼Œéœ€è¦åœ¨é¡µé¢å¼•ç”¨es5-shamå’Œes5-shimæ–‡ä»¶ã€‚
 
 ```
     <script type="text/javascript" src="../libs/es5-shim.min.js"></script>
     <script type="text/javascript" src="../libs/es5-sham.min.js"></script>
 ```
 
-## Ê¹ÓÃ
+## ä½¿ç”¨
    - $ npm run dev
-       ÔÚä¯ÀÀÆ÷ÊäÈëhttp://localhost:8080/
+       åœ¨æµè§ˆå™¨è¾“å…¥http://localhost:8080/
 
   - $ npm run build 
-      ±àÒëÊ¾Àýµ½distÊä³öÄ¿Â¼
+      ç¼–è¯‘ç¤ºä¾‹åˆ°distè¾“å‡ºç›®å½•
+      
+ ## ç¤ºä¾‹
+ https://337547038.github.io/reactDemo/
